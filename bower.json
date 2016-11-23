@@ -1,0 +1,26 @@
+{
+  "name": "Moreak Personal Cite",
+  "description": "Personal Cite",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [],
+  "authors": [
+    "V. Zbryzskiy"
+  ],
+  "license": "no license",
+  "homepage": "https://github.com/Zimbo0397/moreak.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0",
+    "bxslider-4": "bx-slider.js#^4.2.5",
+    "Bootstrap-Image-Gallery": "^3.4.2",
+    "blueimp-gallery": "^2.21.3"
+  }
+}

@@ -1,0 +1,105 @@
+doctype html
+html(lang='ru', ng-app="magApp")
+	head
+		title main
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+
+		section.content
+			.container
+				.catalog-inner
+					.categories
+						ul
+							li.catli
+								a(href="#") Ленты
+								ul.level-2
+									li
+										a(href="#") Синие 
+									li
+										a(href="#") Красные
+									li
+										a(href="#") Черные
+							li.catli
+								a(href="#") Штампы
+								ul.level-2
+									li
+										a(href="#") Синие 
+									li
+										a(href="#") Красные
+									li
+										a(href="#") Черные
+							li.catli
+								a(href="#") Формы
+								ul.level-2
+									li
+										a(href="#") Синие 
+									li
+										a(href="#") Красные
+									li
+										a(href="#") Черные
+							li.catli
+								a(href="#") Ленты
+								ul.level-2
+									li
+										a(href="#") Синие 
+									li
+										a(href="#") Красные
+									li
+										a(href="#") Черные
+							li.catli
+								a(href="#") Инструмент
+								ul.level-2
+									li
+										a(href="#") Синие 
+									li
+										a(href="#") Красные
+									li
+										a(href="#") Черные
+							li.catli
+								a(href="#") Материалы
+								ul.level-2
+									li
+										a(href="#") Синие 
+									li
+										a(href="#") Красные
+									li
+										a(href="#") Черные
+					.sort-block
+						.price-sort
+							ul
+								li
+									a(href="#") от дешевых к дорогим
+								li
+									a(href="#") от дорогих к дешевым
+								li
+									a(href="#") популярные
+								li
+									a(href="#") новинки
+								li
+									a(href="#") акционные
+								li
+									a(href="#") по рейтингу
+					.products-grid(ng-controller="productsCtrl")
+						ul.inline-layout.col-6
+							li.product-item(ng-repeat="x in products")
+								.image-holder
+									.is-sale {{x.src}}
+									img.fake-img(src= {{x.src}}, alt= '')
+									//- .img(style='background-image: url('+{{x.src}}+')')
+								//- .price {{x.price}}
+								//- a.buy-btn(href="#") Купить
+								//- .description
+								//- 	p  {{x.title}}
+
+
+
+
+		
+
+		include ./partials/modals.jade
+
+	include ./partials/scripts.jade

@@ -1,0 +1,157 @@
+@import _mixins
+
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by
+	display: none !important
+#__bs_notify__
+	display: none !important
+	opacity: 0 !important
+
+body
+	font: $font-stack
+	&::-webkit-scrollbar
+		height: 0
+		width: 0
+
+*
+	transition: all .3s
+
+
+//----------------------------------
+// TEST
+//----------------------------------
+section.test-block
+	margin: 100px 0
+//----------------------------------
+// END TEST
+//----------------------------------
+.top-panel
+	height: 70px
+	width: 100%
+	background: rgba(0, 0, 0, 0.64)
+	padding: 20px 0
+	z-index: 10
+
+.top-navigation
+	text-align: right
+	li
+		display: inline-block
+		transition: background .2s
+		a
+			color: #fff
+			margin: 0 10px
+		&:hover
+			background: #12908b
+			transition: background .2s
+.logo-block
+	position: absolute
+	left: 0
+	color: #fff
+	.lv-2
+		font-size: 12px
+		padding-left: 67px
+		display: block
+		line-height: 13px
+.top-line
+	height: 100vh
+	background-size: cover
+	.top-title
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translateX(-50%) translateY(-50%)
+		padding: 30px
+		background: rgba(0, 0, 0, 0.54)
+		white-space: nowrap
+		width: auto
+		h2
+			font-weight: 900
+			font-size: 60px
+			line-height: 65px
+		h3
+			padding-left: 90px
+			font-size: 50px
+			line-height: 55px
+		h4
+			font-size: 45px
+			line-height: 50px
+			padding-left: 300px
+
+
+.catalog-inner
+	padding-left: 241px
+	position: relative
+.categories
+	width: 240px
+	display: inline-block
+	position: absolute
+	left: 0
+	top: 0px
+	min-height: 500px
+	border: 1px solid #000
+
+.sort-block
+	background: #fff
+	height: 61px
+	top: 0
+	left: 240px
+	padding: 10px
+	border: 1px solid #000
+	text-align: right
+	.price-sort
+		display: inline-block
+		border: 1px solid #5f5c5c
+		padding: 5px
+		max-height: 38px
+		overflow: hidden
+		background: #fff
+		&:hover
+			max-height: 1000px
+			transition: max-height .2s
+		li
+			&:hover
+				background: #ccabab
+			a
+				display: block
+
+.catli
+	border: 1px solid #000
+	margin: 1px;
+	a
+		display: block
+		padding: 3px
+		&:hover
+			background: #c57f7f
+	.level-2
+		max-height: 0px
+		overflow: hidden
+		transition: max-height .2s
+		padding-left: 20px
+	&:hover
+		.level-2
+			max-height: 1000px
+			overflow: initial
+			transition: max-height .2s
+
+
+
+
+
+
+
+					
+.product-item
+	.is-sale
+		position: absolute
+		top: 0
+		left: 0
+		background: red
+		display: inline-block
+		z-index: 2
+		color: #000
+	.buy-btn
+		border: 1px solid #000
+
+
+
+
