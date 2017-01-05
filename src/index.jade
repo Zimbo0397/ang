@@ -90,10 +90,10 @@ html(lang='ru', ng-app="magApp")
 									.is-sale {{x.src}}
 									img.fake-img(src!= "{{x.src}}", alt= '')
 									.img(style='background-image: url({{x.src}})')
-								//- .price {{x.price}}
-								//- a.buy-btn(href="#") Купить
-								//- .description
-								//- 	p  {{x.title}}
+								.price {{x.price}}
+								a.buy-btn(href="#") Купить
+								.description
+									p  {{x.title}}
 
 
 
